@@ -15,9 +15,5 @@
      limitations under the License.
 -->
 <resources>
-    <string-array name="vendor_required_apps_managed_profile">
-        <item>com.android.vending</item>
-        <item>com.google.android.gms</item>
-        <item>com.google.android.contacts</item>
-    </string-array>
+    <string name="metadata_sync_pacakge">com.google.android.gms</string>
 </resources>
