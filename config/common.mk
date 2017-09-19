@@ -340,6 +340,27 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     rr.ota.version= $(shell date +%Y%m%d) \
     ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
 
+# Additional props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.com.android.dataroaming=false \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+    ro.setupwizard.rotation_locked=true \
+    ro.com.google.ime.theme_id=5 \
+    ro.storage_manager.enabled=1 \
+    ro.opa.eligible_device=true \
+    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.setupwizard.network_required=false \
+    ro.setupwizard.gservices_delay=-1 \
+    drm.service.enabled=true \
+    net.tethering.noprovisioning=true \
+    persist.sys.dun.override=0 \
+    keyguard.no_require_sim=true \
+    persist.sys.disable_rescue=true
+
 # Properties for build flash info script
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rr.version=$(RR_VERSION) \
@@ -349,7 +370,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rr.build.type=$(RR_BUILDTYPE) \
     rr.ota.version= $(shell date +%Y%m%d) \
     ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
-    
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/rr/build/target/product/security/rr
 
