@@ -47,7 +47,7 @@ custom_local_manifest = ".repo/local_manifests/roomservice.xml"
 custom_default_revision = "oreo"
 custom_dependencies = "rr.dependencies"
 org_manifest = "rr-devices"  # leave empty if org is provided in manifest
-org_display = "ResurrectionRemix-Devices"  # needed for displaying
+org_display = "7comp"  # needed for displaying
 
 github_auth = None
 
