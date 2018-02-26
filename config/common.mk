@@ -166,7 +166,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     ResurrectionOTA \
-    ResurrectionStats
+    ResurrectionStats \
+    alogcat
 
 # Berry styles
 PRODUCT_PACKAGES += \
