@@ -166,8 +166,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     ResurrectionOTA \
-    ResurrectionStats \
-    alogcat
+    alogcat \
+    Jelly
 
 # Berry styles
 PRODUCT_PACKAGES += \
@@ -279,6 +279,7 @@ PRODUCT_COPY_FILES += \
 
 # Included prebuilt apk's
 PRODUCT_PACKAGES += \
+    NexusLauncher \
     GoogleClock \
     Wallpapers
 
