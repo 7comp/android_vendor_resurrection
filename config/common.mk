@@ -325,7 +325,7 @@ endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
-PRODUCT_VERSION = 6.0.0
+PRODUCT_VERSION = 6.1.0
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-O-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
@@ -387,7 +387,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 RR_DISPLAY_VERSION := $(RR_VERSION)
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES +=
     ro.rr.display.version=$(RR_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
